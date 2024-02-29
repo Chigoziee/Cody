@@ -1,5 +1,19 @@
+import subprocess
+
+def upgrade_pip():
+    try:
+        # Run pip install command to upgrade pip
+        subprocess.check_call(["pip", "install", "--upgrade", "pip"])
+        print("pip has been successfully upgraded.")
+    except subprocess.CalledProcessError as e:
+        print("Error upgrading pip:", e)
+
+if __name__ == "__main__":
+    upgrade_pip()
+
+
+
 # Import package
-pip install --upgrade pip
 from openai import OpenAI
 import streamlit as st
 
