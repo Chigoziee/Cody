@@ -9,7 +9,7 @@ with st.chat_message("Cody", avatar = '🤖'):
     st.write("What code would you like to generate?")
 
 # initializing OpenAI Client
-client = OpenAI(api_key=API_KEY)
+client = OpenAI(api_key=st.secrets["API_KEY"])
 
 response = ''
 # Getting User input
