@@ -1,4 +1,4 @@
 #Libraries installation
---upgrade pip
+pip
 openai==1.11.1
 streamlit
