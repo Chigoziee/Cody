@@ -26,6 +26,6 @@ if prompt:
                               {"role": "user", "content": prompt}
                               ])
         response = cody.choices[0].message.content
-if aprompt:
+if prompt:
     with st.chat_message("Cody", avatar='🤖'):
         st.write(response)
